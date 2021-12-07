@@ -1,0 +1,225 @@
+body{
+	margin: 0;
+}
+
+@font-face {
+	font-family: Bioweapon;
+	src: url(../bioweapon.ttf);
+}
+
+video{
+	position: fixed;
+	min-width: 100%;
+	min-height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: -2;
+}
+
+.gradiante-inicio{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to bottom, #151720 20%, #151720f3 70%, #151720c7 90%, #15171e00);
+}
+
+.container-menu{
+		position: fixed;
+		top: 0;
+		right: 0;
+		border-radius: 0% 0% 0% 100%;
+		background: linear-gradient(to bottom, #0b0c11ef 10%, #151720fb 70%, #151720c7 90%, #15171e00);
+		padding: 30px 26px 52px 52px;
+		transition: 0.8s;
+}
+
+.icon-menu{
+	color: #D4D8E5;
+	font-size: 40px;
+	cursor: pointer;
+}
+
+.icon-close{
+	position: fixed;
+	color: #D4D8E5;
+	font-size: 40px;
+	top: 26px;
+	right :26px;
+	transition: 1.8s;
+	cursor: pointer;
+}
+
+.menu{
+	position:fixed;
+	top: 47%;
+	left: 50%;
+	transform : translate(-50% , -50%);
+	display: flex;
+	flex-direction: column;	
+	z-index: 100000;
+	display: none;
+	transition: 1.8s;
+} 
+
+.menu a {
+	text-decoration: none;
+	padding: 14px;
+	color: #D4D8E5;
+	font-size: 35px;
+	font-family: 'Rajdhani',sans-serif;
+	text-align: center;
+	position: relative;
+	transition: 400ms;
+
+}
+
+.menu a:before{
+	content: '';
+	width: 0;
+	height: 3px;
+	position: absolute;
+	top: 55px;
+	left:50%;
+	background : #D4D8E5;
+	transition: all 400ms;
+}
+
+.menu a:hover:before{
+	width: 100%;
+	left: 0%;
+	background: #d2be74;
+}
+
+.menu a:hover{
+	color: #d2be74;
+	font-size: 39px;
+}
+
+#menu-item{
+	transition: all 1.8s;
+}
+
+.redes{
+	margin-top: 40px;
+	cursor: pointer;
+}
+
+.redes a:hover:before {
+	width: 0%;
+	left: 0%;
+}
+
+.principal{
+	font-family: 'Rajdhani', sans-serif;
+	color: #D4D8E5;
+	text-align: center;
+	width: 30%;
+	position: relative;
+	left: 34%;
+	margin-top:40px;
+	opacity: 1;
+	transition: all 1s;
+	z-index: 0;
+}
+
+
+.principal h1{
+	margin-top: -15px;
+}
+
+.principal .linea{
+	margin-top: -30px;
+}
+.down a svg{
+	margin-top: -35px;
+}
+.down:hover{
+	width: 65;
+	height: 65;
+	transition: 1s;
+	font-size: 45px;
+}
+.logoPrincipal{
+	width: 100%;
+}
+
+.cabecera{
+ 	position: fixed;
+ 	margin-top: -55px;
+ 	margin-left: 10px;
+ 	opacity: 0;
+ 	transition: all 1s;
+}
+.cabecera img{
+	width: 18%;
+
+}
+.titulocabecera{
+	font-family: 'Rajdhani', sans-serif;
+	color: #D4D8E5;
+	margin-top: 60px;
+	margin-left: 110px;
+}
+
+#ir_arriba{
+	position: fixed;
+	z-index: 1000;
+	right:25px;
+	bottom:25px;
+	background-color: #D4D8E5;
+	width: 64px;
+	height: 64px;
+	color: #15171E;
+	text-align: center;
+	border-radius:50%;
+	transition: all .2s;
+}
+
+#ir_arriba:hover{
+	cursor: pointer;
+	transform:scale(1.1)
+}
+
+.indicador_contenedor{
+	width: 100%;
+	position:fixed;
+	top: 0;
+	height: 2px;
+	z-index: 1001;
+}
+
+.indicador_scroll{
+	height: 100%;
+	width: 0;
+	background-color: #D4D8E5;
+}
+
+.ocultar{
+	opacity: 0;
+	visibility : hidden;
+}
+
+.mostrar{
+	opacity: 1;
+	visibility : visible;
+}
+
+body::-webkit-scrollbar {
+	width: 8px;
+	background: linear-gradient(to bottom, #151720 20%, #151720f3 70%, #151720c7 90%, #15171ec9);
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #D4D8E5;
+	border-radius: 10px;
+	border-right: 2px solid #15151D;
+}
+.derechos{
+	font-size: 10px;
+	color: #D4D8E5;
+	margin-left: 44px;
+	margin-top: 20px;
+}
